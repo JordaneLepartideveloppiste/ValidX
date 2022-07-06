@@ -1,5 +1,11 @@
 export class Record {
-  constructor(id, annuaireId, annuaireName, date, Ip, tokenAccess) {
+  id: string;
+   annuaireId: string;
+    annuaireName: string; 
+    date: Date; 
+    Ip: string; 
+    tokenAccess: string;
+  constructor(id: string, annuaireId: string, annuaireName: string, date: Date, Ip: string, tokenAccess: string) {
     this.id = id;
     this.annuaireId = annuaireId;
     this.annuaireName = annuaireName;
@@ -12,41 +18,41 @@ export class Record {
     return new Record(null, null, null, null, null, null);
   }
 
-  setId(id) {
+  setId(id: string) {
     this.id = id;
   }
 
   getId() {
     return this.id;
   }
-  setAnnuaireId(annuaireId) {
+  setAnnuaireId(annuaireId: string) {
     this.annuaireId = annuaireId;
   }
 
   getAnnuaireId() {
     return this.annuaireId;
   }
-  setAnnuaireName(annuaireName) {
+  setAnnuaireName(annuaireName: string) {
     this.annuaireName = annuaireName;
   }
 
   getAnnuaireName() {
     return this.annuaireName;
   }
-  setDate(date) {
+  setDate(date: Date) {
     this.date = date;
   }
 
   getDate() {
     return this.date;
   }
-  setIp(Ip) {
+  setIp(Ip: string) {
     this.Ip = Ip;
   }
   getIp() {
     return this.Ip;
   }
-  setTokenAccess(tokenAccess) {
+  setTokenAccess(tokenAccess: string) {
     this.tokenAccess = tokenAccess;
   }
   getTokenAccess() {

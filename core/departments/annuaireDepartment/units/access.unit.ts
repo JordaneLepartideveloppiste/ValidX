@@ -1,10 +1,16 @@
+
  export class Access {
+   id: string;
+    name: string;
+    validityDate: Date;
+    tokenAccess: string;
+    columnsToReturn: string[];
   constructor(
-    id,
-    name,
-    validityDate,
-    tokenAccess,
-    columnsToReturn
+    id: string,
+    name: string,
+    validityDate: Date,
+    tokenAccess: string,
+    columnsToReturn: string[],
   ) {
     this.id = id;
     this.name = name;
@@ -17,34 +23,34 @@
     return new Access(null, null, null, null, null);
   }
 
-  setId(id) {
+  setId(id: string) {
     this.id = id;
   }
 
   getId() {
     return this.id;
   }
-  setName(name) {
+  setName(name: string) {
     this.name = name;
   }
 
   getName() {
     return this.name;
   }
-  setValidityDate(validityDate) {
+  setValidityDate(validityDate: Date) {
     this.validityDate = validityDate;
   }
 
   getValidDate() {
-    return this.validDate;
+    return this.validityDate;
   }
-  setTokenAccess(tokenAccess) {
+  setTokenAccess(tokenAccess: string) {
     this.tokenAccess = tokenAccess;
   }
   getTokenAccess() {
     return this.tokenAccess;
   }
-  setColumnsToReturn(columnsToReturn) {
+  setColumnsToReturn(columnsToReturn: string[]) {
     this.columnsToReturn = columnsToReturn;
   }
   getColumnsToReturn() {

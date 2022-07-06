@@ -1,42 +1,38 @@
 export class Proprietaire  {
-    constructor(id, name, email, hashPassword) {
+    id: string; 
+    name: string; 
+    email: string;
+    constructor(id: string, name: string, email: string) {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.hashpassword = hashPassword;
     }
 
     static newProprietaire() {
-        return new Proprietaire(null, null, null, null)
+        return new Proprietaire(null, null, null)
     }
 
-    setId(id) {
+    setId(id: string) {
         this.id = id;
     }
 
     getId() {
         return this.id;
     }
-    setName(name) {
+    setName(name: string) {
         this.name = name;
     }
 
     getName() {
         return this.name;
     }
-    setEmail(email) {
+    setEmail(email: string) {
         this.email = email;
     }
 
     getEmail() {
         return this.email;
     }
-    setHashPassword(hashPassword) {
-        this.hashPassword = hashPassword;
-    }
-
-    getHashPassword() {
-        return this.hashPassword;
-    }
+    
 
 }

@@ -1,5 +1,11 @@
 export class CustomerAccount {
-  constructor(id, proprietaireName, proprietaireId, typeAccount, isActivate) {
+  id: string;
+   proprietaireName: string;
+    proprietaireId: string;
+     typeAccount: string;
+      isActivate: boolean;
+      
+  constructor(id: string, proprietaireName: string, proprietaireId: string, typeAccount: string, isActivate: boolean) {
     this.id = id;
     this.proprietaireName = proprietaireName;
     this.proprietaireId = proprietaireId;
@@ -11,21 +17,21 @@ export class CustomerAccount {
     return new CustomerAccount(null, null, null, null, null);
   }
 
-  setId(id) {
+  setId(id: string) {
     this.id = id;
   }
 
   getId() {
     return this.id;
   }
-  setProprietaireName(proprietaireName) {
+  setProprietaireName(proprietaireName: string) {
     this.proprietaireName = proprietaireName;
   }
 
   getProprietaireName() {
     return this.proprietaireName;
   }
-  setProprietaireId(proprietaireId) {
+  setProprietaireId(proprietaireId: string) {
     this.proprietaireId = proprietaireId;
   }
 
@@ -33,13 +39,13 @@ export class CustomerAccount {
     return this.proprietaireId;
   }
 
-  setTypeAccount(typeAccount) {
+  setTypeAccount(typeAccount: string) {
     this.typeAccount = typeAccount;
   }
   getTypeAccount() {
     return this.typeAccount;
   }
-  setIsActivate(isActivate) {
+  setIsActivate(isActivate: boolean) {
     this.isActivate = isActivate;
   }
   getIsActivate() {
